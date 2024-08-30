@@ -37,23 +37,23 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-        if (!isDead)
-        {
-            isDead = true;
-            // animator.SetTrigger("Die");
-            // DeathCounter deathCounter = FindObjectOfType<DeathCounter>();
-            // if (deathCounter != null)
-            // {
-            //     deathCounter.IncrementDeathCount();
-            // }
-            // Invoke("RestartLevel", 0.7f);
-        }
+    //     if (!isDead)
+    //     {
+    //         isDead = true;
+    //         animator.SetTrigger("Die");
+    //         DeathCounter deathCounter = FindObjectOfType<DeathCounter>();
+    //         if (deathCounter != null)
+    //         {
+    //             deathCounter.IncrementDeathCount();
+    //         }
+    //         Invoke("RestartLevel", 0.7f);
+    //     }
     }
 
     void RestartLevel()
     {
         Debug.Log("Restarting level...");
-        isDead = false;
+        // isDead = false;
         // animator.ResetTrigger("Die");
         // animator.Play("Culm");
         // animator.SetFloat("Speed", 0);

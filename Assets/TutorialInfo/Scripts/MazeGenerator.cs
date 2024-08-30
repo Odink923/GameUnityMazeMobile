@@ -35,7 +35,7 @@ public class MazeGenerator : MonoBehaviour
 
     void Update()
     {
-        UpdateTextPosition(); // Оновлюємо позицію тексту кожного кадру
+
     }
   
     public void GenerateAndDrawMaze()
@@ -238,20 +238,5 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
-    void UpdateTextPosition()
-    {
-        if (mainCamera != null && levelText != null)
-        {
-            Vector3 newPosition = mainCamera.ViewportToWorldPoint(new Vector3(0, 1, mainCamera.nearClipPlane));
-            newPosition.z = 0;
 
-            float xOffset = 3f;
-            float yOffset = -2f;
-
-            newPosition.x += xOffset;
-            newPosition.y += yOffset;
-
-            levelText.transform.position = newPosition;
-        }
-    }
 }
